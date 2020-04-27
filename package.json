@@ -1,0 +1,29 @@
+{
+  "name": "covid-19",
+  "version": "1.0.0",
+  "description": "The project is going to fetch the live data from the API using Async/Await syntax. In this video, we also use React Hooks!",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "classnames": "^2.2.6",
+    "react-chartjs-2": "^2.9.0",
+    "react-countup": "^4.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maaz1996/covid-19.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maaz1996/covid-19/issues"
+  },
+  "homepage": "https://github.com/maaz1996/covid-19#readme"
+}
