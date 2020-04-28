@@ -8,7 +8,7 @@ export const fetchdata = async () => {
       confirmed: data.confirmed,
       recovered: data.recovered,
       deaths: data.deaths,
-      lastUpdated: data.lastUpdate
+      lastUpdate: data.lastUpdate
     };
     return modifiedresponse;
   } catch (error) {}
