@@ -4,7 +4,7 @@ import {
   CardComponent,
   Typography,
   Grid,
-  CardContent
+  CardContent,
 } from "@material-ui/core";
 import CountUp from "react-countup";
 import cx from "classnames";
@@ -29,8 +29,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
             <Typography color="textSecondary" gutterBottom>
               Infected
             </Typography>
-            <Typography varaint="h5">
-              {" "}
+            <Typography varaint="h5" component="h2">
               <CountUp
                 start={0}
                 end={confirmed.value}
@@ -55,8 +54,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
             <Typography color="textSecondary" gutterBottom>
               Recovered
             </Typography>
-            <Typography varaint="h5">
-              {" "}
+            <Typography varaint="h5" component="h2">
               <CountUp
                 start={0}
                 end={recovered.value}
@@ -68,7 +66,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2">
-              No.of Recoveries from Covid-19
+              Number of Recoveries from Covid-19
             </Typography>
           </CardContent>
         </Grid>
@@ -83,8 +81,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
             <Typography color="textSecondary" gutterBottom>
               Deaths
             </Typography>
-            <Typography varaint="h5">
-              {" "}
+            <Typography varaint="h5" component="h2">
               <CountUp
                 start={0}
                 end={deaths.value}
@@ -96,7 +93,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2">
-              No.of Deaths caused by Covid-19
+              Number of Deaths caused by Covid-19
             </Typography>
           </CardContent>
         </Grid>
