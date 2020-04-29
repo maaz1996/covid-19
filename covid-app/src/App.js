@@ -8,7 +8,7 @@ import image from "./images/image.png";
 class App extends React.Component {
   state = {
     data: {},
-    country: ""
+    country: "",
   };
 
   async componentDidMount() {
@@ -17,10 +17,10 @@ class App extends React.Component {
     this.setState({ data: fetcheddata });
   }
 
-  handleCountryChange = async country => {
-    //fetch the data
+  handleCountryChange = async (country) => {
+    const fetcheddataforcountry = await fetchdata(country);
+    this.setState({ data: fetcheddataforcountry, country: country });
     //set the state
-    console.log(country);
   };
   render() {
     const { data } = this.state;
